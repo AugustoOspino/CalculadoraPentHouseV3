@@ -15,10 +15,7 @@ const formatterPeso = new Intl.NumberFormat('es-CO', {
   })
 //Validamos que el tamaño del inmueble sea valido
 if(tam>0){
-    // su el tamaño es menor a 50 lo subimos a 50 
-    if (tam < 50) {
-        tam = 50;
-    }
+    
     //calculamos segun tipo y cambiamos valores
     switch(tipo){
     
@@ -27,6 +24,10 @@ if(tam>0){
             break;
         case "1":
             //cuando el inmueble es tipo oficina
+            // su el tamaño es menor a 50 lo subimos a 50 
+            if (tam < 50) {
+            tam = 50;
+            }
             switch(rec){
                 default:
                 document.getElementById("result").innerHTML = ("Debe seleccionar la recurrencia ");
@@ -88,6 +89,10 @@ if(tam>0){
             break ;
         case"2":
                  //cuando el inmueble es tipo residencial 
+                 // su el tamaño es menor a 60 lo subimos a 60 
+            if (tam < 60) {
+                 tam = 60;
+            }
             if(tam >=40 && tam <=86){
                 switch(pla){
                     default:
@@ -633,7 +638,11 @@ if(tam>0){
             }
         break;
        case"3":
-            //cuando el inmueble es tipo turistico 
+            //cuando el inmueble es tipo turistico
+            // su el tamaño es menor a 50 lo subimos a 50 
+            if (tam < 50) {
+             tam = 50;
+            } 
             switch(rec){
                 default:
                 document.getElementById("result").innerHTML = ("Debe seleccionar la recurrencia ");
