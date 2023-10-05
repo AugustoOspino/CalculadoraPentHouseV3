@@ -15,9 +15,9 @@ const formatterPeso = new Intl.NumberFormat('es-CO', {
   })
 //Validamos que el tamaño del inmueble sea valido
 if(tam>0){
-    // su el tamaño es menor a 40 lo subimos a 40 
-    if (tam < 40) {
-        tam = 40;
+    // su el tamaño es menor a 50 lo subimos a 50 
+    if (tam < 50) {
+        tam = 50;
     }
     //calculamos segun tipo y cambiamos valores
     switch(tipo){
